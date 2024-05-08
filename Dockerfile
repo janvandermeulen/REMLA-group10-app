@@ -14,5 +14,8 @@ RUN pip install poetry \
 # Copy the rest of the application code
 COPY . .
 
+# Copy the templates folder
+COPY templates /app/templates
+
 # Set the command to run the Flask app
 CMD ["python", "app.py"]
